@@ -84,6 +84,7 @@ export default {
       const re = new RegExp(this.escapedQuery, 'gi')
 
       // Filter, sort, and concat
+      /*
       return this.data
         .filter(i => i.text.match(re) !== null)
         .sort((a, b) => {
@@ -94,6 +95,8 @@ export default {
           if (aIndex > bIndex) { return 1 }
           return 0
         }).slice(0, this.maxMatches)
+      */
+      return this.data
     }
   },
 
